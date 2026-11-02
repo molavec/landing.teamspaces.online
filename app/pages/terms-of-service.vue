@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-useHead({
+useSeoMeta({
   title: 'Terms of Service - Teamspaces',
-  meta: [
-    { name: 'description', content: 'Terms of Service for Teamspaces' }
-  ]
+  description: 'Terms of Service for Teamspaces',
+  ogTitle: 'Terms of Service - Teamspaces',
+  ogDescription: 'Terms of Service for Teamspaces'
 })
 </script>
 

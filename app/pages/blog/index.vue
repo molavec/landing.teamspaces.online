@@ -24,7 +24,9 @@ function formatDate(dateStr?: string | Date) {
 
 useSeoMeta({
   title: () => `${t('blog.title')} - Teamspaces`,
-  description: () => t('blog.description')
+  description: () => t('blog.description'),
+  ogTitle: () => `${t('blog.title')} - Teamspaces`,
+  ogDescription: () => t('blog.description')
 })
 </script>
 

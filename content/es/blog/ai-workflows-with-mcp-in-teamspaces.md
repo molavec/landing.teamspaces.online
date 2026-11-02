@@ -4,7 +4,7 @@ authors:
   - name: Ingeniería Teamspaces
     description: Equipo de Integraciones e IA
     avatar:
-      src: /workspices_icon.png
+      src: /logos/spaces.svg
       alt: Teamspaces
 badge: Inteligencia Artificial
 date: '2026-03-20'

@@ -36,12 +36,15 @@ function formatDate(dateStr?: string | Date) {
   })
 }
 
+const config = useRuntimeConfig()
+
 useSeoMeta({
   title: () => `${post.value?.title || 'Article'} - Teamspaces`,
   description: () => post.value?.description,
+  ogType: 'article',
   ogTitle: () => post.value?.title,
   ogDescription: () => post.value?.description,
-  ogImage: () => post.value?.image
+  ogImage: () => post.value?.image ? new URL(post.value.image, config.public.siteUrl).toString() : undefined
 })
 </script>
 

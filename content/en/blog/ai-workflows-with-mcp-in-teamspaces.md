@@ -8,7 +8,7 @@ authors:
   - name: "Teamspaces Engineering"
     description: "AI & Platform Integrations"
     avatar:
-      src: "/workspices_icon.png"
+      src: "/logos/spaces.svg"
       alt: "Teamspaces"
 draft: false
 ---
