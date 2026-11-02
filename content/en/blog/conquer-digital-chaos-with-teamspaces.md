@@ -8,7 +8,7 @@ authors:
   - name: "Teamspaces Team"
     description: "Product & Workflow Team"
     avatar:
-      src: "/workspices_icon.png"
+      src: "/logos/spaces.svg"
       alt: "Teamspaces"
 draft: false
 ---

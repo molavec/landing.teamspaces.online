@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-useHead({
+useSeoMeta({
   title: 'Privacy Policy - Teamspaces',
-  meta: [
-    { name: 'description', content: 'Privacy Policy for Teamspaces' }
-  ]
+  description: 'Privacy Policy for Teamspaces',
+  ogTitle: 'Privacy Policy - Teamspaces',
+  ogDescription: 'Privacy Policy for Teamspaces'
 })
 </script>
 
@@ -14,7 +14,7 @@ useHead({
     <p class="text-sm text-gray-600 mb-6">Effective date: 2025-10-26</p>
     
     <p class="mb-6">
-      This Privacy Policy explains how we collect, use, disclose, and protect personal information when you visit and use the website at landing.teamspaces.online ("the Site"). By using the Site, you agree to the collection and use of information in accordance with this policy.
+      This Privacy Policy explains how we collect, use, disclose, and protect personal information when you visit and use the website at teamspaces.online ("the Site"). By using the Site, you agree to the collection and use of information in accordance with this policy.
     </p>
 
     <h2 class="text-2xl font-bold mt-8 mb-4">Information we collect</h2>

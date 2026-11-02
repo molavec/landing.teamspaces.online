@@ -4,7 +4,7 @@ authors:
   - name: Equipo Teamspaces
     description: Equipo de Producto y Flujos de Trabajo
     avatar:
-      src: /workspices_icon.png
+      src: /logos/spaces.svg
       alt: Teamspaces
 badge: Productividad
 date: '2026-03-15'

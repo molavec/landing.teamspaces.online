@@ -13,7 +13,15 @@ export default defineNuxtConfig({
     'nuxt-studio',
   ],
 
+  runtimeConfig: {
+    public: {
+      siteUrl: 'https://teamspaces.online',
+      siteName: 'Teamspaces',
+    },
+  },
+
   i18n: {
+    baseUrl: 'https://teamspaces.online',
     locales: [
       { code: 'en', language: 'en-US', name: 'English', file: 'en.json' },
       { code: 'es', language: 'es-ES', name: 'Español', file: 'es.json' }
@@ -25,8 +33,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+        { rel: 'icon', type: 'image/x-icon', sizes: 'any', href: '/favicon.ico' },
         { rel: 'icon', type: 'image/png', sizes: '48x48', href: '/favicon-48x48.png' },
         { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/favicon-192x192.png' },
         { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
@@ -47,6 +54,7 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
+    '/sitemap.xml': { prerender: true },
     '/blog/**': { prerender: true },
     '/es/blog/**': { prerender: true }
   },
@@ -59,7 +67,7 @@ export default defineNuxtConfig({
     },
     prerender: {
       crawlLinks: true,
-      routes: ['/blog', '/es/blog']
+      routes: ['/sitemap.xml', '/blog', '/es/blog']
     }
   },
 
@@ -68,7 +76,7 @@ export default defineNuxtConfig({
     repository: {
       provider: 'github',
       owner: 'molavec',
-      repo: 'landing.workspices.online',
+      repo: 'landing.teamspaces.online',
       branch: 'dev'
     }
   },
